@@ -50,7 +50,7 @@
   position: relative;
 }
 
-/* Show delete button when hovering over the todo item */
+
 .todo-item:hover .delete-btn-1 {
   visibility: visible;
 }
@@ -251,6 +251,7 @@
   gap: 10px;
   border-radius: 6px;
   background: #F3F4F6;
+  cursor: pointer;
 }
 
 .todo-name {
