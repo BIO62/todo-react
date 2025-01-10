@@ -2,11 +2,11 @@ import "./App.css";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import moment from "moment";
-import Filter from "./components/Filtertodo";
+import FilterTodo from "./components/Filtertodo";
 import AddTask from "./components/AddTask";
 import Footer from "./components/Footer";
 import TodoItem from "./components/TodoItem";
-import FooterHidden from "./components/Footerhidden";
+import Footeren from "./components/Footeren";
 
 function App() {
   const [todo, setTodo] = useState([]);
@@ -123,7 +123,7 @@ function App() {
           setInputValue={setInputValue}
           handleAddButton={handleAddButton}
         />
-        <Filter
+        <FilterTodo
           filterState={filterState}
           handleFilterState={handleFilterState}
         />
@@ -138,8 +138,8 @@ function App() {
             setSelectedTaskId={setSelectedTaskId}
           />
         ))}
-        {todo.length > 0 && completedCount > 0 && (
-          <Footer
+        {completedCount > 0 && (
+          <Footeren
             completedCount={completedCount}
             totalCount={todo.length}
             handleDeleteAll={handleDeleteAll}

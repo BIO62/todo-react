@@ -1,7 +1,7 @@
 // Footer.js
 import React from "react";
 
-const FooterHidden = ({ completedCount, totalCount, handleDeleteAll }) => {
+const Footeren = ({ completedCount, totalCount, handleDeleteAll }) => {
   return (
     <div className="footer">
       <div className="tasks-completed">
@@ -14,4 +14,4 @@ const FooterHidden = ({ completedCount, totalCount, handleDeleteAll }) => {
   );
 };
 
-export default FooterHidden;
+export default Footeren;
